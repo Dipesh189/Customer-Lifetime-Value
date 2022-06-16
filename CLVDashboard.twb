@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='full predicted' inline='true' name='federated.1mqz9300j01jhe1d2mi7s0vbtqe0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='full predicted' name='textscan.0xfhtc80bm1z7k12cibbi1olb2ux'>
+            <connection class='textscan' directory='D:/Assignment Machine Learning/EDA/open retail data set' filename='full predicted.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Online Retail' name='excel-direct.023mbmi1bl700g1d537qh1gow99k'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Assignment Machine Learning/EDA/open retail data set/Online Retail.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0xfhtc80bm1z7k12cibbi1olb2ux' name='full predicted.csv' table='[full predicted#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='real' name='Recency' ordinal='0' />
+            <column datatype='integer' name='Frequency' ordinal='1' />
+            <column datatype='real' name='Price_Sum' ordinal='2' />
+            <column datatype='real' name='Price_Mean' ordinal='3' />
+            <column datatype='real' name='Spend_90' ordinal='4' />
+            <column datatype='real' name='Spend_90_flag' ordinal='5' />
+            <column datatype='integer' name='Labels' ordinal='6' />
+            <column datatype='real' name='KNN_Predict_Prob' ordinal='7' />
+            <column datatype='real' name='SVC_Predict_Prob' ordinal='8' />
+            <column datatype='real' name='AB_Predict_Prob' ordinal='9' />
+            <column datatype='real' name='RF_Predict_Prob' ordinal='10' />
+            <column datatype='real' name='DT_Predict_Prob' ordinal='11' />
+            <column datatype='real' name='Price_Pre' ordinal='12' />
+            <column datatype='real' name='Price_Pre2' ordinal='13' />
+            <column datatype='real' name='AVSP' ordinal='14' />
+            <column datatype='real' name='AVSP2' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0xfhtc80bm1z7k12cibbi1olb2ux' name='full predicted.csv' table='[full predicted#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='real' name='Recency' ordinal='0' />
+            <column datatype='integer' name='Frequency' ordinal='1' />
+            <column datatype='real' name='Price_Sum' ordinal='2' />
+            <column datatype='real' name='Price_Mean' ordinal='3' />
+            <column datatype='real' name='Spend_90' ordinal='4' />
+            <column datatype='real' name='Spend_90_flag' ordinal='5' />
+            <column datatype='integer' name='Labels' ordinal='6' />
+            <column datatype='real' name='KNN_Predict_Prob' ordinal='7' />
+            <column datatype='real' name='SVC_Predict_Prob' ordinal='8' />
+            <column datatype='real' name='AB_Predict_Prob' ordinal='9' />
+            <column datatype='real' name='RF_Predict_Prob' ordinal='10' />
+            <column datatype='real' name='DT_Predict_Prob' ordinal='11' />
+            <column datatype='real' name='Price_Pre' ordinal='12' />
+            <column datatype='real' name='Price_Pre2' ordinal='13' />
+            <column datatype='real' name='AVSP' ordinal='14' />
+            <column datatype='real' name='AVSP2' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Recency]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>Recency</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Frequency]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>Frequency</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price_Sum</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price_Sum]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>Price_Sum</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price_Mean</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price_Mean]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>Price_Mean</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Spend_90</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Spend_90]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>Spend_90</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Spend_90_flag</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Spend_90_flag]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>Spend_90_flag</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Labels</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Labels]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>Labels</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KNN_Predict_Prob</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[KNN_Predict_Prob]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>KNN_Predict_Prob</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SVC_Predict_Prob</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SVC_Predict_Prob]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>SVC_Predict_Prob</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AB_Predict_Prob</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AB_Predict_Prob]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>AB_Predict_Prob</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RF_Predict_Prob</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RF_Predict_Prob]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>RF_Predict_Prob</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DT_Predict_Prob</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DT_Predict_Prob]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>DT_Predict_Prob</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price_Pre</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price_Pre]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>Price_Pre</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price_Pre2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price_Pre2]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>Price_Pre2</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AVSP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AVSP]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>AVSP</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AVSP2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AVSP2]</local-name>
+            <parent-name>[full predicted.csv]</parent-name>
+            <remote-alias>AVSP2</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='AB Predict Prob' datatype='real' name='[AB_Predict_Prob]' role='measure' type='quantitative' />
+      <column caption='Avsp2' datatype='real' name='[AVSP2]' role='measure' type='quantitative' />
+      <column caption='Avsp' datatype='real' name='[AVSP]' role='measure' type='quantitative' />
+      <column caption='DT Predict Prob' datatype='real' name='[DT_Predict_Prob]' role='measure' type='quantitative' />
+      <column caption='KNN Predict Prob' datatype='real' name='[KNN_Predict_Prob]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Labels]' role='dimension' type='ordinal' />
+      <column caption='Price Mean' datatype='real' name='[Price_Mean]' role='measure' type='quantitative' />
+      <column caption='Price Pre2' datatype='real' name='[Price_Pre2]' role='measure' type='quantitative' />
+      <column caption='Price Pre' datatype='real' name='[Price_Pre]' role='measure' type='quantitative' />
+      <column caption='Price Sum' datatype='real' name='[Price_Sum]' role='measure' type='quantitative' />
+      <column caption='RF Predict Prob' datatype='real' name='[RF_Predict_Prob]' role='measure' type='quantitative' />
+      <column caption='SVC Predict Prob' datatype='real' name='[SVC_Predict_Prob]' role='measure' type='quantitative' />
+      <column caption='Spend 90' datatype='real' name='[Spend_90]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Spend 90 flag' datatype='real' name='[Spend_90_flag]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='full predicted.csv' datatype='table' name='[__tableau_internal_object_id__].[full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='full predicted.csv' id='full predicted.csv_0A6795A6ACBE43FD951C2A191E58CC8F'>
+            <properties context=''>
+              <relation connection='textscan.0xfhtc80bm1z7k12cibbi1olb2ux' name='full predicted.csv' table='[full predicted#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='real' name='Recency' ordinal='0' />
+                  <column datatype='integer' name='Frequency' ordinal='1' />
+                  <column datatype='real' name='Price_Sum' ordinal='2' />
+                  <column datatype='real' name='Price_Mean' ordinal='3' />
+                  <column datatype='real' name='Spend_90' ordinal='4' />
+                  <column datatype='real' name='Spend_90_flag' ordinal='5' />
+                  <column datatype='integer' name='Labels' ordinal='6' />
+                  <column datatype='real' name='KNN_Predict_Prob' ordinal='7' />
+                  <column datatype='real' name='SVC_Predict_Prob' ordinal='8' />
+                  <column datatype='real' name='AB_Predict_Prob' ordinal='9' />
+                  <column datatype='real' name='RF_Predict_Prob' ordinal='10' />
+                  <column datatype='real' name='DT_Predict_Prob' ordinal='11' />
+                  <column datatype='real' name='Price_Pre' ordinal='12' />
+                  <column datatype='real' name='Price_Pre2' ordinal='13' />
+                  <column datatype='real' name='AVSP' ordinal='14' />
+                  <column datatype='real' name='AVSP2' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Online Retail (Online Retail)' inline='true' name='federated.12sxapu0b60ojj18fr6pj0cp5zxa' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Online Retail' name='excel-direct.0h3ug931cxgksw17dztjs0foz314'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Assignment Machine Learning/EDA/open retail data set/Online Retail.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0h3ug931cxgksw17dztjs0foz314' name='Online Retail' table='[&apos;Online Retail$&apos;]' type='table'>
+          <columns gridOrigin='A1:H10001:no:A1:H10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='InvoiceNo' ordinal='0' />
+            <column datatype='string' name='StockCode' ordinal='1' />
+            <column datatype='string' name='Description' ordinal='2' />
+            <column datatype='integer' name='Quantity' ordinal='3' />
+            <column datatype='datetime' name='InvoiceDate' ordinal='4' />
+            <column datatype='real' name='UnitPrice' ordinal='5' />
+            <column datatype='integer' name='CustomerID' ordinal='6' />
+            <column datatype='string' name='Country' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0h3ug931cxgksw17dztjs0foz314' name='Online Retail' table='[&apos;Online Retail$&apos;]' type='table'>
+          <columns gridOrigin='A1:H10001:no:A1:H10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='InvoiceNo' ordinal='0' />
+            <column datatype='string' name='StockCode' ordinal='1' />
+            <column datatype='string' name='Description' ordinal='2' />
+            <column datatype='integer' name='Quantity' ordinal='3' />
+            <column datatype='datetime' name='InvoiceDate' ordinal='4' />
+            <column datatype='real' name='UnitPrice' ordinal='5' />
+            <column datatype='integer' name='CustomerID' ordinal='6' />
+            <column datatype='string' name='Country' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Online Retail]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H10001:no:A1:H10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceNo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InvoiceNo]</local-name>
+            <parent-name>[Online Retail]</parent-name>
+            <remote-alias>InvoiceNo</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Online Retail_9619D752814D40378FD0D6A65A55F62E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockCode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[StockCode]</local-name>
+            <parent-name>[Online Retail]</parent-name>
+            <remote-alias>StockCode</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Online Retail_9619D752814D40378FD0D6A65A55F62E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Online Retail]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Online Retail_9619D752814D40378FD0D6A65A55F62E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Online Retail]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Online Retail_9619D752814D40378FD0D6A65A55F62E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[InvoiceDate]</local-name>
+            <parent-name>[Online Retail]</parent-name>
+            <remote-alias>InvoiceDate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Online Retail_9619D752814D40378FD0D6A65A55F62E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UnitPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UnitPrice]</local-name>
+            <parent-name>[Online Retail]</parent-name>
+            <remote-alias>UnitPrice</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Online Retail_9619D752814D40378FD0D6A65A55F62E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerID]</local-name>
+            <parent-name>[Online Retail]</parent-name>
+            <remote-alias>CustomerID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Online Retail_9619D752814D40378FD0D6A65A55F62E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Online Retail]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Online Retail_9619D752814D40378FD0D6A65A55F62E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total customer' datatype='integer' name='[Calculation_756041833434570752]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([CustomerID])' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+      <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+      <column caption='Invoice No' datatype='integer' name='[InvoiceNo]' role='measure' type='quantitative' />
+      <column caption='Stock Code' datatype='string' name='[StockCode]' role='dimension' type='nominal' />
+      <column caption='Unit Price' datatype='real' name='[UnitPrice]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Online Retail' datatype='table' name='[__tableau_internal_object_id__].[Online Retail_9619D752814D40378FD0D6A65A55F62E]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Online Retail' id='Online Retail_9619D752814D40378FD0D6A65A55F62E'>
+            <properties context=''>
+              <relation connection='excel-direct.0h3ug931cxgksw17dztjs0foz314' name='Online Retail' table='[&apos;Online Retail$&apos;]' type='table'>
+                <columns gridOrigin='A1:H10001:no:A1:H10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='InvoiceNo' ordinal='0' />
+                  <column datatype='string' name='StockCode' ordinal='1' />
+                  <column datatype='string' name='Description' ordinal='2' />
+                  <column datatype='integer' name='Quantity' ordinal='3' />
+                  <column datatype='datetime' name='InvoiceDate' ordinal='4' />
+                  <column datatype='real' name='UnitPrice' ordinal='5' />
+                  <column datatype='integer' name='CustomerID' ordinal='6' />
+                  <column datatype='string' name='Country' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D55EA133-73B0-4199-81E4-3467A8B4F9C5}' />
+    </worksheet>
+    <worksheet name='Total customers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Online Retail (Online Retail)' name='federated.12sxapu0b60ojj18fr6pj0cp5zxa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12sxapu0b60ojj18fr6pj0cp5zxa'>
+            <column caption='Total customer' datatype='integer' name='[Calculation_756041833434570752]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([CustomerID])' />
+            </column>
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_756041833434570752]' derivation='User' name='[usr:Calculation_756041833434570752:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.12sxapu0b60ojj18fr6pj0cp5zxa].[usr:Calculation_756041833434570752:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0B0F9FAF-D984-4EC2-B1C8-AA8C37275BD7}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Total customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7AE9332F-E52E-461F-8A66-3874E4F7F3C4}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD7322D0-8184-45B8-B44C-22DEC3997CF8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='25' name='Total customers' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAC70lEQVRYhe1YbUhTYRR+DC2jDLGiwiDZj8KiwjQpgxIhgwap0bJmztQINVc4WNAiTX9o
+      ZmnUSEWl9aFmbCLGlaQyEPqRWlG6UlGZlOjAlrtlortx+iG2pXdLje0G7vn3nq97znPe93C4
+      HkREWMBYJHQCQsNNgNAJCA03AUInIDTcBAidgNBwEyB0AkLDTYDQCQiNBU+Ap0u/ZtQhNToP
+      rSI5dJUJ2GDPjhtEUpQUH43fYIEXfAL24ORFFeKC/OAJoDkrBAqG33WTXIfKhMnInOktdDdu
+      oeLFe5jGgKV+23D48jXIw/yshZPLYCZGIaacB2qSSjVkcGRqeEjtn8w0TkRE42Rs1VB6ZAyV
+      dDlyGiJtioTUesvkcbiO0sOPUW59OxnHiYgsNNpXT8ppcVxGgJlRkDjnJX03aP5OAA96K46S
+      VOPAq6uEJClaGpo6D/dSr3mmmUEj/SOOa2YA24Ds275QKcKwbH4B0KkfwdZAfzv6UTSW12JH
+      YhTWTIlWiiBaMd2Og3mExdrVq35LXEAAi6b8O/BVKRA21+onWHzueIZSuQy6jQVIC7Uzsvq1
+      uGdKQqI9PQCAw2CDCqo3R3Am0pqI04cg25SPYu8MaOZYfVZICBgAWL4ZxzPVKI5Yj8W8lhxa
+      qqvgL6m1dn86JrpRc16B+z/jUVgWC5FN1R5EzvslNlCZgKgivX0DcSHasvfOKhb7+ByiO2Vo
+      UgbbSDm8LohG1ZYqXD84476D67uL5LN6xJbl4uA6O72e4yz6d8xzCFqeqyhY+YTGbIVmhhTi
+      q9Rm4XPQk1oiI00vn9KK/3IR6q/JRM/XH+AAABNge54ir7gZ+8J3w9vGrru6HOZ4GYL5mvuO
+      QX1gMuJEjl+5axchO+BariDy0hIUNWZgOwD//TE4EXsAPaYxAF7wCQjCobRHuBBhc83ZBpTW
+      huI0w//yBzo78IWpwS6ehcl2WXLqDJgdjNClJqPvVB2UvK10LgR/AtwHLV7tvIkMAYoHgF+Y
+      eIangeeEQQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
